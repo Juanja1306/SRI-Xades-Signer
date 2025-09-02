@@ -17,7 +17,7 @@ to SRI specification v2.31.
   ```bash
   pip install sri-xades-signer
   ```
-  
+
 * From the repository:
 
   ```bash
@@ -94,4 +94,31 @@ to SRI specification v2.31.
 
 ## License
 
-See the `LICENSE` file.
+Licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.  
+See [`LICENSE`](./LICENSE)
+
+## Provenance & Attribution
+
+This project, **SRI-Xades-Signer**, is a derivative work of **jsonfm/xades-bes-sri**  
+<https://github.com/jsonfm/xades-bes-sri> (AGPL-3.0).  
+The upstream project itself credits **xades-bes-sri-ec** by @alfredo138923.
+
+### Modifications by Juan Malo (2025-09-02)
+
+- Package name and module structure: `sri_xades_signer` (pyproject-based).
+- Public API additions:
+  - `XadesSigner` class for re-usable signing.
+  - `sign_and_save(...)` convenience function.
+  - `SignatureError` for consistent error handling.
+- Input ergonomics: support for PKCS#12 via file path using `read_file=True`.
+- Documentation: updated examples and guidance for SRI spec **v2.31**.
+- Dependency and packaging updates.
+
+### Network Use Notice (AGPL-3.0 §13)
+
+If this software (modified or not) is run as a network-accessible service, users of that service must be offered the **complete corresponding source code** of the exact version running, at no charge. A simple way is to expose a “Source” link pointing to this repository.
+
+### Credits & Copyright
+
+- Original work: **jsonfm/xades-bes-sri** — © jsonfm and contributors   
+- Derivative work: **SRI-Xades-Signer** — © 2025 Juan Malo
